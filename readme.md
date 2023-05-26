@@ -3,7 +3,7 @@
 ## Create a workday scheduler with thirdparty API's
 
 - Create a simple calendar application that allows a user to save events for each hour of the day
-- The app wil run in the browser and feature dynamically updated HTML and CSS powered by jQuery
+- The app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery
 - Learning to use HTML, CSS, javascript, VS Code, Git Bash, and Git Hub
 - Learning to use core skills like flexbox, media quries, and CSS variables, Day.js,and  jQuery
 - Practice using GitHub including but not limited to:  creating a repo, commit, push, pull, revert
@@ -96,7 +96,7 @@ This includes:
 
 ## Credits
 - complied by SBroton
-- Last updated May 2023
+- Last updated June 2023
 - With the assistance from Tutors, TA's, AskBSC, and w3schools.com
 - With additional research learned from WDS: Web Dev Simplified (https://www.youtube.com/@WebDevSimplified)
 - Other sources may apply, see GitHub under resolved issues
