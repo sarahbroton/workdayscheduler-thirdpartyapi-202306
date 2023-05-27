@@ -22,6 +22,7 @@ $(function () {
     // TODO: Add code to display the current date in the header of the page.
   });
 
-  const eventDate = document.querySelectorAll('.events')
-  console.log(events); 
-//   dayjs().format(dddd-MMMM-D); 
+  var eventDate = document.querySelector('.events')
+  eventDate.textContent = dayjs().format('dddd, MMMM D')
+
+

@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    
+        
   }
   
   textarea {
@@ -11,15 +11,14 @@ body {
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
-   
+     
 
 }
 
-.h1.display-3 {
-    display: flex; 
-    justify-content: center;
+header {
+  text-align: center;
 }
-  
+ 
   .description {
     white-space: pre-wrap; 
     
