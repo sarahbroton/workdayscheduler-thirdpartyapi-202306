@@ -23,5 +23,5 @@ $(function () {
   });
 
   const eventDate = document.querySelectorAll('.events')
-  console.log(events)
+  console.log(events); 
 //   dayjs().format(dddd-MMMM-D); 
