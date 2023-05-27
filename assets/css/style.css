@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    
   }
   
   textarea {
@@ -10,18 +11,28 @@ body {
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
-  }
+   
+
+}
+
+.h1.display-3 {
+    display: flex; 
+    justify-content: center;
+}
   
   .description {
-    white-space: pre-wrap;
+    white-space: pre-wrap; 
+    
   }
   
   .time-block {
     border-radius: 15px;
+   
   }
   
   .row {
     border-top: 1px solid white;
+    
   }
   
   .hour {
@@ -57,3 +68,8 @@ body {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
   }
+
+  /* TROUBLESHOOT
+  outline: 3px solid limegreen !important;
+background rgba (1, 151, 0, 0.1) !important;
+  */
