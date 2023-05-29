@@ -3,19 +3,85 @@
 // in the html.
 
 
-// $(function () {
+$(document).ready(function () {
 
-cont div = document.querySelectorAll('div')
+// date display
+$('#currentDay').text(dayjs().format('dddd, MMMM D')); 
 
-addGlobalEventListener("click", 'div' e =>) {
-  console.log('yay')
-}
+// PAST PRESENT FUTURE TIME COLOR BLOCKS
+var currentHour = dayjs().format('H');
+$(".time-block").each(function() {
+    if (parseInt(currentHour) === parseInt(this.id)) {
+        $(this).addClass("present");
+    } else if (parseInt(currentHour) > parseInt(this.id)) {
+        $(this).addClass("past");
+    } else {
+        $(this).addClass("future");
+    }
+})
+// PAST PRESENT FUTURE TIME BLOCKS
 
-  function.addGlobalEventListener(type,selector,callback) {
-    document.addEventListener(type, e => {
-      if(e.target.matches(selector)) callback(e)
-    })
+$(".saveBtn").each(function() {
+  if (parseInt(currentHour) === parseInt(this.id.split("-")[1])) {
+      $(this).addClass("present");
+  } else if (parseInt(currentHour) > parseInt(this.id.split("-")[1])) {
+      $(this).addClass("past");
+  } else {
+      $(this).addClass("future");
   }
+})
+
+// events
+var storedEvents = [];
+
+// initialise();
+// function renderEvents() {
+//   $("textarea").each(function() {
+//       this.value = "";
+//   })
+  
+//   $.each(storedEvents, function() {
+//       $("textarea." + this.eventTime)[0].value = this.eventText;
+//   }) 
+// }
+// function initialise() {
+//   var userEvent = JSON.parse(localStorage.getItem("storedEvents"));
+//   if (userEvent !== null) {
+//       storedEvents = userEvent;
+//   }
+//   renderEvents();
+// }
+// function storeEvents() {
+//   localStorage.setItem("storedEvents", JSON.stringify(storedEvents));
+// }
+// $("button").on("click", function(event) {
+//   event.preventDefault();
+//   event.stopPropagation();
+//   var className = $(event.target).attr("class");
+  
+//   var eventObject = {
+//       eventTime: className,
+//       eventText: $("textarea." + className).val()
+//   } 
+//   console.log(eventObject.eventText);
+//   if (storedEvents.length > 0) {
+//       $.each(storedEvents, function() {
+//           if (this.eventTime === event.target.className) {
+//               storedEvents.splice($.inArray(this, storedEvents), 1);
+//           }    
+//       });
+//   }
+//   storedEvents.push(eventObject);
+//   $.each(storedEvents, function() {
+//       if (this.eventText === "") {
+//           storedEvents.splice($.inArray(this, storedEvents), 1);
+//       }
+//   })
+//   storeEvents();
+//   renderEvents();
+// })
+// });
+
 
 
     // TODO: Add a listener for click events on the save button. This code should
@@ -36,10 +102,5 @@ addGlobalEventListener("click", 'div' e =>) {
     // attribute of each time-block be used to do this?
     //
 
-
-
-// TODO: Add code to display the current date in the header of the page.
-  var eventDate = document.querySelector('.events')
-  eventDate.textContent = dayjs().format('dddd, MMMM D')
 
 
