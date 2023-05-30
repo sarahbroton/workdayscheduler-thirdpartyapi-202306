@@ -15,15 +15,21 @@ $(document).ready(function () {
     // / CODE COMES FROM https://github.com/jkaho/workday-scheduler/commit/5385c23cb774f24100d32eec123204d3d4e41bd4#
     // PAST PRESENT FUTURE TIME COLOR BLOCKS
     var currentHour = dayjs().format('H');
+    
     $(".time-block").each(function () {
-        if (parseInt(currentHour) === parseInt(this.id)) {
+    
+        if (parseInt(currentHour) === parseInt((this.id).substring(5))) {
             $(this).addClass("present");
-        } else if (parseInt(currentHour) > parseInt(this.id)) {
+        
+        } else if (parseInt(currentHour) > parseInt((this.id).substring(5))) {
             $(this).addClass("past");
+                     
         } else {
             $(this).addClass("future");
+            
         }
     })
+
 
     // CODE IS A MIX OF MY CODE AND  FROM https://github.com/jkaho/workday-scheduler/commit/5385c23cb774f24100d32eec123204d3d4e41bd4#
     // PAST PRESENT FUTURE TIME BLOCKS
@@ -83,9 +89,7 @@ $(document).ready(function () {
         $("#hour-17 .description").val(localStorage.getItem("hour-17"));
     }
 })
-
-
-
+    
 
 
 
