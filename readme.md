@@ -92,7 +92,7 @@ This includes:
 >
 5. Some limitations apply:
 
- <!  --ADD LIMITATIONS CRITERIA-->       
+ <!  --IF LIMITATIONS, THEY WILL BE LISTED HERE-->       
 
 ## Credits
 - complied by SBroton
@@ -109,9 +109,7 @@ This includes:
 
 ![image](https://github.com/sarahbroton/workdayscheduler-thirdpartyapi-202306/assets/130716239/7ea4e62e-f5ce-458a-9845-1131bcbd94aa)
 
-<! --- ADD GIF?>
 
 ## Link
 
-<! --UPDATE THIS LINK-->
-https://sarahbroton.github.io/webapi-codequiz-202305/
+https://sarahbroton.github.io/workdayscheduler-thirdpartyapi-202306/
