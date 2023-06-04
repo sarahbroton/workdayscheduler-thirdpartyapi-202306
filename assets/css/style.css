@@ -55,6 +55,11 @@ header {
   color: white;
 }
 
+#ul.no-bullets {
+  list-style-type: none; 
+  padding: 0; 
+}
+
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
